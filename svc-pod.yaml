@@ -7,5 +7,5 @@ spec:
     app: nginx-pod
   type: LoadBalancer
   ports:
-    - port: 8086
-      targetPort: 8085
+    - port: 80
+      targetPort: 80

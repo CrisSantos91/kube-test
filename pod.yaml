@@ -9,4 +9,4 @@ spec:
     - name: nginx-pod
       image: nginx:stable
       ports:
-        - containerPort: 8085
+        - containerPort: 80

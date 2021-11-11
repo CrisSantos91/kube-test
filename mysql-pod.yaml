@@ -6,7 +6,10 @@ metadata:
     app: mysql-pod
 spec:
   containers:
-    - name: nginx-pod
-      image: mysql
+    - name: mysql-pod
+      image: mysql:latest
+      env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: root
       ports:
         - containerPort: 3306
